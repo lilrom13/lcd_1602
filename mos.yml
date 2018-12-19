@@ -1,5 +1,6 @@
 author: Romain Margheriti
-description: Skeleton mongoose-os app for esp32
+description: Mongoose-os library for LCD Display 1602A
+type: lib
 platform: esp32
 version: 1.0
 
@@ -10,11 +11,10 @@ mongoose_os_version: ${mos_version}
 sources:
   - src
 
+includes:
+  - include
+
 tags:
   - c
-
-libs:
-  - origin: https://github.com/mongoose-os-libs/boards
-  - origin: https://github.com/mongoose-os-libs/core
 
 manifest_version: 2017-05-18
