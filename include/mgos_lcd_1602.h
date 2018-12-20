@@ -29,8 +29,8 @@ typedef struct mgos_lcd_1602_t {
   int enable;
 } mgos_lcd_1602;
 
-mgos_lcd_1602 *init_lcd_1602(int rs, int rw, int enable);
-void           destroy_lcd_1602(mgos_lcd_1602 *);
+mgos_lcd_1602 *mgos_lcd_1602_create(int rs, int rw, int enable);
+void           mgos_lcd_1602_destroy(mgos_lcd_1602 *);
 
 #ifdef __cplusplus
 }
