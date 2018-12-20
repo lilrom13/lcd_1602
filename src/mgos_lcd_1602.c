@@ -1,7 +1,7 @@
 #include "mgos.h"
 #include "mgos_lcd_1602.h"
 
-mgos_lcd_1602 *mgos_lcd_1602_create(int rs, int rw, int enable) {
+mgos_lcd_1602 *mgos_lcd_1602_init(int rs, int rw, int enable) {
   mgos_lcd_1602 *lcd = calloc(0, sizeof(mgos_lcd_1602));
 
   lcd->rs = rs;

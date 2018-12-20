@@ -29,7 +29,7 @@ typedef struct mgos_lcd_1602_t {
   int enable;
 } mgos_lcd_1602;
 
-mgos_lcd_1602 *mgos_lcd_1602_create(int rs, int rw, int enable);
+mgos_lcd_1602 *mgos_lcd_1602_init(int rs, int rw, int enable);
 void           mgos_lcd_1602_destroy(mgos_lcd_1602 *);
 
 #ifdef __cplusplus
